@@ -25,7 +25,7 @@ const importData = async ()=>{
         await User.create(users, {validateBeforeSave: false});
         await Review.create(reviews);
 
-        console.log('Data succesfully loaded!');
+        // console.log('Data succesfully loaded!');
         // console.log(tours);
     }catch(err){
         console.log(err);
@@ -39,7 +39,7 @@ const deleteData = async ()=>{
         await User.deleteMany();
         await Review.deleteMany();
         
-        console.log('Data succesfully deleted!');
+        // console.log('Data succesfully deleted!');
     }catch(err){
         console.log(err);
     }
