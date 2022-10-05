@@ -39,38 +39,6 @@ app.use(
     })
   );
 
-// app.use(helmet.contentSecurityPolicy({
-//     directives: {
-//       defaultSrc: ["'self'", 'data:', 'blob:'],
- 
-//       baseUri: ["'self'"],
- 
-//       fontSrc: ["'self'", 'https:', 'data:'],
- 
-//       scriptSrc: ["'self'", 'https://*.cloudflare.com'],
- 
-//       scriptSrc: ["'self'", 'https://*.stripe.com'],
- 
-//       scriptSrc: ["'self'", 'http:', 'https://*.mapbox.com', 'data:'],
- 
-//       frameSrc: ["'self'", 'https://*.stripe.com'],
- 
-//       objectSrc: ["'none'"],
- 
-//       styleSrc: ["'self'", 'https:',  "'unsafe-inline'" ],
- 
-//       workerSrc: ["'self'", 'data:', 'blob:'],
- 
-//       childSrc: ["'self'", 'blob:'],
- 
-//       imgSrc: ["'self'", 'data:', 'blob:'],
- 
-//       connectSrc: ["'self'", 'blob:', 'https://*.mapbox.com'],
- 
-//       upgradeInsecureRequests: [],
-//     },
-//   }));
-
 // Development logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
