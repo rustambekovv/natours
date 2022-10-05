@@ -1,4 +1,4 @@
-const AppError = require("../utilis/appError");
+const AppError = require('../utilis/appError');
 
 const handleCastErrorDB = err=>{
     const message = `Invalid ${err.path}: ${err.value}.`;
@@ -27,7 +27,7 @@ const sendErrorDev = (err, req, res)=>{
             status: err.status,
             error:err,
             message:err.message,
-            stack:err.stack
+            // stack:err.stack
         });
     }
         console.error('ERROR', err);
